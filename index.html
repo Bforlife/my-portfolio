@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mma's Code - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Mma's Code</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="buy-now-btn hire-me">Hire Me</a>
+        </div>
+    </header>
+
+
+    
+    
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Hello, I'm Mma</h2>
+                <p>Full-Stack Developer based in Nigeria</p>
+                <h3>I build responsive websites and applications.</h3>
+            </div>
+        </div>
+    </section>
+
+      <!-- Resume Section -->
+<section id="resume" class="resume">
+    <div class="container">
+        <h2>My Resume</h2>
+        <p>Here's a brief snapshot of my professional journey.</p>
+        
+        <div class="resume-timeline">
+            <div class="resume-item">
+                <h3>Frontend Developer</h3>
+                <p><strong>Company Name</strong> | [Year - Year]</p>
+                <p>Worked on developing responsive and dynamic user interfaces using HTML, CSS, Bootstrap and JavaScript.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Full Stack Developer</h3>
+                <p><strong>Company Name</strong> | [Year - Year]</p>
+                <p>Developed end-to-end solutions, handling both frontend and backend with PHP.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+        <div class="project-slider">
+            <!-- project cards -->
+
+            <div class="project-card">
+                <img src="pics/b1-1.png" alt="">
+                
+            </div>
+
+            <div class="project-card">
+                <video src="vid/b2.mp4" controls></video>
+                <h3>Demo Banking App</h3>
+                <p>
+                    A mobile-friendly application assured to take the management of personal finance to the next level. This application provides account management, a secured channel for the transfer of funds, automatic bill payments, and the ability to create budgets. Security in the application is prioritized through biometric authentication and encryption; hence, there is safe access to financial data. This application demonstrates my skills in the development of a mobile application, user experience design, and offering a secure financial solution.</p>
+            </div>
+          
+            <div class="project-card">
+                <video src="vid/calculatorvid.mp4" controls></video>
+               <h3>Demo Calculator App</h3>
+                <p>
+                    A sleek and responsive web application that provides basic and advanced calculation functions. The app features a user-friendly interface with a digital keypad, allowing users to perform arithmetic operations easily. Key functionalities include addition, subtraction, multiplication, division, and memory storage. Designed to demonstrate my skills in front-end development, UI/UX design, and JavaScript functionality.</p>
+            </div>
+            
+            <div class="project-card"> 
+                <video src="vid/clockvid.mp4 " controls></video>
+                <h3>Demo Clock App</h3>
+                <p>A visually appealing web application that displays the current time, date, and customizable alarm features. Users can toggle between 12-hour and 24-hour formats, and set multiple alarms with ease. The app showcases my skills in front-end development, real-time data manipulation, and responsive design, providing an intuitive user experience.</p>
+            </div>
+            <div class="project-card">
+                <video src="vid/notepad2.mp4" controls></video>
+                <h3>Demo Notepad App</h3>
+                <p>
+                    A simple and intuitive web-based notepad application that allows users to create, edit, and delete text notes. The app features a clean interface, auto-saving functionality, and the ability to organize notes for easy access. This project demonstrates my skills in front-end development, local storage management, and user experience design.</p>
+            </div>
+            
+        </div>
+         <!-- Pagination Dots -->
+ <div class="pagination">
+    <span class="dot active" onclick="goToProject(0)"></span>
+    <span class="dot" onclick="goToProject(1)"></span>
+    <span class="dot" onclick="goToProject(2)"></span>
+    <span class="dot" onclick="goToProject(3)"></span>
+    <span class="dot" onclick="goToProject(4)"></span>
+</div>
+    </div>
+
+    <!-- Blog Section -->
+<section id="blog" class="blog-section" style="background-color:#111; color: white;">
+    <div class="container">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3>5 Essential Keyboard Shortcuts for Efficient Coding</h3>
+            <p>Discover five crucial keyboard shortcuts that can enhance your coding efficiency. 
+            From commenting out lines to navigating your code faster, these tips will streamline your workflow.</p>
+            <a href="blog1.html" class="read-more">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>Top 10 Tools to Boost Your Productivity as a Developer</h3>
+            <p>Explore ten incredible tools that can help you manage your projects, improve collaboration, and enhance your coding productivity.</p>
+            <a href="blog2.html" class="read-more">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>How to Write Clean and Maintainable Code</h3>
+            <p>Learn best practices for writing clean and maintainable code, making it easier for you and others to understand and work with your codebase.</p>
+            <a href="blog3.html" class="read-more">Read More</a>
+        </div>
+    </div>
+</section>
+    
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to discuss a project or just want to say hi, feel free to drop a message.</p>
+        
+        <form action="insert.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="message">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Scroll-to-Top Button -->
+<div id="scrollTop">↑</div>
+
+
+
+</body>
+<script src="index.js"></script>
+</html>
